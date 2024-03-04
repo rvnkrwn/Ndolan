@@ -1,6 +1,7 @@
 <template>
   <div>
-    <section class="h-[30%] w-full bg-gradient-to-r from-blue-700 to-blue-500 overflow-hidden">
+    <section class="h-[30%] w-full overflow-hidden bg-blend-soft-light relative bg-black/30 backdrop-blur">
+      <img src="/images/pattren.png" alt="" class="absolute object-cover h-full w-full -z-10">
       <div class="container mx-auto p-10 pt-28">
         <h1 class="comfortaa-bold text-xl text-white">
           Destinasi Wisata
