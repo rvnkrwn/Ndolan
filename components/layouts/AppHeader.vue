@@ -1,5 +1,6 @@
 <template>
   <div class="fixed w-full p-4 z-[9999]">
+    <ThePreloader />
     <header class="container mx-auto bg-base-100/20 text-white backdrop-blur p-4 md:p-6 rounded-box flex justify-between items-center">
       <div id="logo">
         <h1 class="comfortaa-bold">
@@ -41,6 +42,7 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 import { gsap } from 'gsap'
+import ThePreloader from '~/components/app/ThePreloader.vue'
 
 const runtimeConfig = useRuntimeConfig()
 const appName: String | null = String(runtimeConfig.public.appName)
