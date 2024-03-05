@@ -29,18 +29,20 @@
     </section>
     <section id="search">
       <div class="w-full h-fit transform -translate-y-1/2 flex items-center justify-center">
-        <div
+        <form
+          method="get"
+          action="/wisata"
           class="min-w-[80%] md:min-w-[35rem] h-14 rounded-box shadow-lg shadow-black/20 bg-base-100 flex justify-between items-center overflow-hidden p-4"
         >
           <input
             id="search"
             class="w-full h-full p-2 outline-none bg-transparent"
-            name="search"
+            name="q"
             placeholder="Cari sesuatu disini..."
             type="search"
           >
           <Icon height="24" icon="ic:round-search" width="24" />
-        </div>
+        </form>
       </div>
     </section>
     <section id="about">
@@ -91,27 +93,29 @@
       <div class="w-full h-[80dvh] px-4 py-16">
         <div class="h-full w-full grid gap-3 grid-cols-2 grid-rows-6 md:grid-cols-3 md:grid-rows-4">
           <div v-for="(destination, i) in destinations.slice(0,4)" :key="i" :class="['rounded-2xl relative overflow-hidden', `item-${i+1}`]" data-aos="zoom-out" :data-aos-delay="i % 2 === 0 ? 200 : 400">
-            <img
-              :src="'images/'+destination['image0']"
-              alt="cover"
-              class="w-full h-full object-cover"
-            >
-            <div class="w-11/12 h-auto bg-base-100/20 text-white backdrop-blur rounded-2xl absolute bottom-2 left-1/2 transform -translate-x-1/2 grid gap-0 grid-cols-2 p-4 border border-base-100/40 md:bottom-4">
-              <div>
-                <h3 class="capitalize text-sm md:text-xl">
-                  {{ destination["name"] }}
-                </h3>
-                <p class="flex items-center gap-1 text-[10px] mt-2 md:text-xs">
-                  <Icon height="14" icon="mdi:location" width="14" />
-                  {{ destination["city"] }}
-                </p>
+            <NuxtLink :to="'/wisata/'+destination['slug']">
+              <img
+                :src="'images/'+destination['image0']"
+                alt="cover"
+                class="w-full h-full object-cover"
+              >
+              <div class="w-11/12 h-auto bg-base-100/20 text-white backdrop-blur rounded-2xl absolute bottom-2 left-1/2 transform -translate-x-1/2 grid gap-0 grid-cols-2 p-4 border border-base-100/40 md:bottom-4">
+                <div>
+                  <h3 class="capitalize text-sm md:text-xl">
+                    {{ destination["name"] }}
+                  </h3>
+                  <p class="flex items-center gap-1 text-[10px] mt-2 md:text-xs">
+                    <Icon height="14" icon="mdi:location" width="14" />
+                    {{ destination["city"] }}
+                  </p>
+                </div>
+                <div>
+                  <h4 class="text-sm text-end md:text-lg">
+                    {{ destination["price"] }} <br><span class="text-[10px] md:text-xs">/orang</span>
+                  </h4>
+                </div>
               </div>
-              <div>
-                <h4 class="text-sm text-end md:text-lg">
-                  {{ destination["price"] }} <br><span class="text-[10px] md:text-xs">/orang</span>
-                </h4>
-              </div>
-            </div>
+            </NuxtLink>
           </div>
           <div class="card item-5 place-content-center">
             <div class="flex justify-between gap-4 items-center px-4 md:px-12">

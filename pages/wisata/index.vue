@@ -13,6 +13,7 @@
           >
             <input
               id="search"
+              v-model="keyword"
               class="w-full h-full p-2 outline-none bg-transparent"
               name="search"
               placeholder="Cari sesuatu disini..."
@@ -55,6 +56,8 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 
+const keyword = ref(useRoute().query.q ? useRoute().query.q : '')
+
 useHead({
   title: 'Wisata - Ndolan.'
 })
@@ -66,7 +69,16 @@ onMounted(() => {
   })
 })
 
-const destinations = ref([
+const destinations = computed(() => {
+  const key = keyword.value
+  if (key) {
+    return data.value.filter(item => item.name.toLowerCase().includes(key) || item.city.toLowerCase().includes(key) || item.Deskripsi.toLowerCase().includes(key))
+  } else {
+    return data.value
+  }
+})
+
+const data = ref([
   {
     slug: 'curug-jenggala',
     name: 'Curug Jenggala',
