@@ -1,8 +1,8 @@
-# Ndolan v.1
+# [Ndolan v.1](https://ndolan.vercel.app)
 
-Ndolan adalah suatu platform yang berisikan mengenai informasi seputar wisata di Banyumas. Di dalam website Ndolan terdapat berbagai hal seperti tempat wisata, transportasi yang bisa digunakan, dan lain sebagainya.
+[Ndolan](https://ndolan.vercel.app) adalah suatu platform yang berisikan mengenai informasi seputar wisata di Banyumas. Di dalam website [Ndolan](https://ndolan.vercel.app) terdapat berbagai hal seperti tempat wisata, transportasi yang bisa digunakan, dan lain sebagainya.
 
-Ndolan diambil dari salah satu bahasa jawa yaitu Ndolan yang artinya jalan-jalan. Karena Banyumas identik dengan kota yang indah dan asri yang enak untuk menjadi tempat singgah ataupun tempat berwisata untuk beristirahat maka dibuatlah website Ndolan supaya bisa membantu pengguna.
+[Ndolan](https://ndolan.vercel.app) diambil dari salah satu bahasa jawa yaitu [Ndolan](https://ndolan.vercel.app) yang artinya jalan-jalan. Karena Banyumas identik dengan kota yang indah dan asri yang enak untuk menjadi tempat singgah ataupun tempat berwisata untuk beristirahat maka dibuatlah website [Ndolan](https://ndolan.vercel.app) supaya bisa membantu pengguna.
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
