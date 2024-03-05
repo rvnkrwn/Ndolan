@@ -5,8 +5,8 @@
       <div class="container mx-auto p-10 pt-28" />
     </section>
     <section>
-      <div class="container mx-auto py-10">
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:p-6">
+      <div class="container mx-auto pb-10">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 p-4 md:p-6">
           <swiper
             :space-between="30"
             :centered-slides="true"
@@ -18,7 +18,7 @@
               clickable: true,
             }"
             :modules="modules"
-            class="mySwiper md:rounded-box"
+            class="mySwiper rounded-box"
           >
             <swiper-slide>
               <img :src="'/images/'+data['image0']" alt="">
@@ -42,7 +42,7 @@
               </p>
             </div>
 
-            <div class="p-4 pt-10">
+            <div class="pt-10">
               <div class="flex gap-4 mb-4 bg-base-content text-base-300 p-5 rounded-2xl">
                 <Icon icon="ph:clock" width="24" height="24" />
                 <div class="grid">
@@ -65,7 +65,7 @@
                 </div>
               </div>
               <div class="flex gap-4 mb-4 bg-base-content text-base-300 p-5 rounded-2xl">
-                <Icon icon="fluent-mdl2:nav-2-d-map-view" width="35" height="35" />
+                <Icon icon="fluent-mdl2:nav-2-d-map-view" width="24" height="24" />
                 <div class="grid">
                   <span>Dapatkan Arahan : </span>
                   <NuxtLink :to="data['maps']" target="_blank">
