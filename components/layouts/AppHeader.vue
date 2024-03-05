@@ -3,9 +3,9 @@
     <ThePreloader />
     <header class="container mx-auto bg-base-100/20 text-white backdrop-blur p-4 md:p-6 rounded-box flex justify-between items-center">
       <div id="logo">
-        <h1 class="comfortaa-bold">
+        <NuxtLink to="/" class="comfortaa-bold">
           {{ appName }}
-        </h1>
+        </NuxtLink>
       </div>
       <nav class="hidden md:block">
         <ul class="flex gap-4">
