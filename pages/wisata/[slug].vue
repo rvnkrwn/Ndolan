@@ -18,7 +18,7 @@
               clickable: true,
             }"
             :modules="modules"
-            class="mySwiper rounded-box"
+            class="mySwiper md:rounded-box"
           >
             <swiper-slide>
               <img :src="'/images/'+data['image0']" alt="">
