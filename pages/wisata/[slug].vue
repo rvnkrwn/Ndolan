@@ -58,14 +58,14 @@
                 </div>
               </div>
               <div class="flex gap-4 mb-4 bg-base-content text-base-300 p-5 rounded-2xl">
-                <Icon icon="simple-icons:googlemaps" width="24" height="24" />
+                <Icon icon="simple-icons:googlemaps" width="35" height="35" />
                 <div class="grid">
                   <span>Alamat Wisata : </span>
                   <span>{{ data['address'] }}</span>
                 </div>
               </div>
               <div class="flex gap-4 mb-4 bg-base-content text-base-300 p-5 rounded-2xl">
-                <Icon icon="fluent-mdl2:nav-2-d-map-view" width="24" height="24" />
+                <Icon icon="fluent-mdl2:nav-2-d-map-view" width="35" height="35" />
                 <div class="grid">
                   <span>Dapatkan Arahan : </span>
                   <NuxtLink :to="data['maps']" target="_blank">
