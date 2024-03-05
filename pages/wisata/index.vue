@@ -72,7 +72,7 @@ onMounted(() => {
 const destinations = computed(() => {
   const key = keyword.value?.toString().toLocaleLowerCase()
   if (key) {
-    return data.filter(item => item.name.toLowerCase().includes(key) || item.city.toLowerCase().includes(key) || item.Deskripsi.toLowerCase().includes(key))
+    return data.filter(item => item.name.toLowerCase().includes(key) || item.city.toLowerCase().includes(key) || item.description.toLowerCase().includes(key))
   } else {
     return data
   }

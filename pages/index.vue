@@ -16,7 +16,7 @@
           <span class="!text-blue-500 text-5xl font-bold md:text-6xl" data-aos="fade-up" data-aos-delay="400">Di Banyumas</span>
         </h1>
         <p data-aos="zoom-in-up" data-aos-delay="600" class="mt-8 max-w-[40rem] mx-auto md:text-lg">
-          mari menjelajah dengan paltform kami dimana kalian semua akan belajar,berwisata,dan lainnya di Banyumas, jawa tengah. dimana dengan keindahan alam serta berada di bawah kaki gunung selamet dan juga memiliki banyak sejarah yang dapat kita pelajari
+          Mari menjelajah dengan platform kami dimana kalian semua akan belajar sambil berwisata di Banyumas, Jawa Tengah. Banyumas menjadi pilihan dimana dengan keindahan alam nya serta memiliki banyak sejarah yang dapat anda pelajari.
         </p>
         <button
           class="btn bg-base-100/20 backdrop-blur border-transparent text-white mt-10 hover:border-base-100 hover:text-base-content"

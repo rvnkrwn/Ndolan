@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+  <footer class="footer footer-center p-10 bg-base-100 text-base-content rounded border-t">
     <nav class="grid grid-flow-col gap-4">
       <a class="link link-hover">Beranda</a>
       <a class="link link-hover">Tempat Wisata</a>
