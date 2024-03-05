@@ -13,6 +13,8 @@
         </h1>
         <hr class="w-20 mx-auto mt-1">
         <br>
+        <img src="/images/logo-text-white.png" alt="" class="h-[20vh] mx-auto">
+        <br>
         <p class="text-sm comfortaa-normal">
           Ndolan adalah suatu platform yang berisikan mengenai informasi seputar wisata di Banyumas. Di dalam
           website Ndolan terdapat berbagai hal seperti tempat wisata, transportasi yang bisa digunakan, dan lain

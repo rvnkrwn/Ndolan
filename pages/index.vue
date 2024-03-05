@@ -52,7 +52,14 @@
           Kenal Kami.
         </h1>
         <div class="p-4 mt-6 flex flex-col gap-4 md:grid md:grid-cols-2 md:items-center">
-          <img alt="travel-ilus" class="mx-auto w-3/4" src="/images/travel-ilus.svg" data-aos="fade-down-right" data-aos-delay="400">
+          <!-- <img alt="travel-ilus" class="mx-auto w-3/4" src="/images/travel-ilus.svg" data-aos="fade-down-right" data-aos-delay="400"> -->
+          <img
+            alt="travel-ilus"
+            class="mx-auto w-3/4"
+            :src="currentTheme != 'dark' ? '/images/logo-text-black.png' : '/images/logo-text-white.png'"
+            data-aos="fade-down-right"
+            data-aos-delay="400"
+          >
           <div class="comfortaa-normal text-base-content/70 text-center text-sm md:text-lg md:text-start p-4" data-aos="fade-down-left" data-aos-delay="600">
             <p>
               Ndolan adalah suatu platform yang berisikan mengenai informasi seputar wisata di Banyumas. Di dalam
@@ -147,6 +154,8 @@ import { Icon } from '@iconify/vue'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin'
 import ParticleDot from '~/components/variation/ParticleDot.vue'
+
+const currentTheme = useState('currentTheme')
 
 onMounted(() => {
   useNuxtApp().$aos().init() // Initialize AOS after mounted

@@ -49,6 +49,10 @@ const appName: String | null = String(runtimeConfig.public.appName)
 const isOpen = ref<boolean>(false)
 const theme = ref('light')
 
+useState('currentTheme').value = computed(() => {
+  return theme.value
+})
+
 const openMenu = (x: boolean) => {
   const sidebar = document.querySelector('#sidebar')
 
